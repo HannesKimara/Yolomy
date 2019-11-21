@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Yolomy Store">
+	<meta name="keywords" content="Yolomy, Store, Yolomy Store">
+	<meta name="author" content="Hannes Kimara">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Yolomy</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300|Ubuntu|Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/main.js"></script>
+</head>
+<body>
+<section id = "yl-landing">
+	<nav class = "navbar yl-navbar navbar-expand-md navbar-dark">
+			<a class="navbar-brand yl-brand yl-text-white" href="#yl-landing">Yolomy</a>
+			<button type = "button" class = "navbar-toggler yl-nav-toggler" data-toggle = "collapse" data-target = "#ylNavbar">
+				<span class = "yl-hamb-line">&#9776</span>
+			</button>
+			<div class = "collapse navbar-collapse yl-text-white" id = "ylNavbar">
+				<ul class = "navbar-nav ml-auto">
+					<li class = "yl-h-aug yl-text-white yl-li-active nav-item"><a href = "#yl-landing" class = "nav-link yl-text-white yl-ml-px8">Home</a></li>
+					<li class = "yl-h-aug yl-text-white nav-item"><a href = "#yl-products" class = "nav-link yl-text-white">Products</a></li>
+					<li class = "yl-h-aug yl-text-white nav-item"><a href = "#" class = "nav-link yl-text-white"><img src = "assets/logo/shop.png" class = "yl-glyph-cart"></img><span class = "yl-cart-text"> Cart</span></a></li>
+				</ul>
+			</div>
+	</nav>
+<div class="container yl-vt-c">
+  <div class="jumbotron yl-no-background yl yl-text-white yl-text-center yl-jumbotron">
+    <h1>Our Clothing , your comfort</h1>      
+    <p>We understand that you need to look good and feel great.<br>It all starts with what you are wearing.</p>
+  </div> 
+</div>
+<div class = "container yl-scrolldown-con">
+	<a class="mouse_click" href = "#yl-products"><img src = "assets/mouse_click.png" class= "mouse-click"></img></a>
+</div>
+</section>
+<section id = "yl-products">
+  <div class="row" style = "width: 100%; margin:0 auto;background:rgb(198,191,165);">
+    <div class="col-md-7" style = "padding:10px">
+	<div class="row" style = "width: 100%; margin:0 auto; padding:0 auto">
+		<div class="col-xs-1" style = "padding:20px"><label class="yl-check-container">MEN<input type="checkbox" checked="checked" id = "yl-checkbox1" oninput = "toggleprm()"><span class="yl-checkmark" oninput = "toggleprm()"></span></label></div>
+		<div class="col-xs-1" style = "padding:20px"><label class="yl-check-container">WOMEN<input type="checkbox" id = "yl-checkbox2" checked oninput = "toggleprw()"><span class="yl-checkmark"></span></label></div>
+		<div class="col-xs-1" style = "padding:20px"><label class="yl-check-container">CHILDREN<input type="checkbox" id = "yl-check-box-3" disabled><span class="yl-checkmark"></span></label></div>
+  </div></div>
+    <div class="col-md-5" style = "padding:28px;"><div class = "container"><button type = "button" class = "btn" id = "allprod-btn" onclick = "togglepr()">SHOW ALL PRODUCTS</button></div></div>
+  </div>
+<div id = "yl-men-pr">
+<div class = "container">
+<div class="yl-fieldset-mock">
+	<div style = "margin-left: 1rem;">MEN</div>
+	<div class="yl-line"></div>
+</div></div>
+<div class = "container">
+	<div class = "row" style = "width:100%">
+		<div class = "col-md-4 text-center"><div class = "yl-shop-card" id = "yl-prd-1">
+			<div class = "yl-prod-row-t">
+				<div class = "yl-prd-det-l">SIZE</div>
+				<div class = "yl-prd-det-r">
+				<div class = "yl-color-Marker">
+                    <div class="yl-colorEllipse" id = "p3" style = "background-color: rgb(83,81,84);"></div>
+                    <div class="yl-colorEllipse" id = "p2" style = "background-color: rgb(0,0,254);"></div>
+                    <div class="yl-colorEllipse" id = "p1" style = "background-color: rgb(45,178,0);"></div>
+				</div>
+				</div>
+			</div>
+			<img src = "assets/products/tshirt.png"></img>
+			<div class = "yl-prod-row-b">
+				<div class = "yl-prd-det-l">T-SHIRT</div>
+				<div class = "yl-prd-det-r">5,00€</div>
+			</div>
+		</div></div>
+		<div class = "col-md-4 text-center"><div class = "yl-shop-card" id = "yl-prd-2">
+		<div class = "yl-prod-row-t">
+				<div class = "yl-prd-det-l">SIZE</div>
+				<div class = "yl-prd-det-r"></div>
+			</div>
+			<img src = "assets/products/pants.png"></img>
+			<div class = "yl-prod-row-b">
+				<div class = "yl-prd-det-l">PANTS FORCLAZ</div>
+				<div class = "yl-prd-det-r">30,00€</div>
+			</div></div></div>
+		<div class = "col-md-4 text-center"><div class = "yl-shop-card" id = "yl-prd-3">
+		<div class = "yl-prod-row-t">
+				<div class = "yl-prd-det-l">10-LITRI</div>
+				<div class = "yl-prd-det-r"></div>
+			</div>
+			<img src = "assets/products/backpack.png"></img>
+			<div class = "yl-prod-row-b">
+				<div class = "yl-prd-det-l">BACKPACK</div>
+				<div class = "yl-prd-det-r">60,00€</div>
+			</div></div></div>
+	</div>
+</div>
+</div>
+<div id = "yl-wom-pr">
+<div class="yl-fieldset-mock container">
+	<div class="yl-line"></div>
+	<div style = "margin-left: 1rem;">WOMEN</div>
+</div>
+<div class = "container">
+	<div class = "row" style = "width:100%">
+		<div class = "col-md-4 text-center"><div class = "yl-shop-card" id = "yl-prd-4">
+			<div class = "yl-prod-row-t">
+				<div class = "yl-prd-det-l">SIZE</div>
+				<div class = "yl-prd-det-r"></div>
+			</div>
+			<img src = "assets/products/giacket.png"></img>
+			<div class = "yl-prod-row-b">
+				<div class = "yl-prd-det-l">GIACKET</div>
+				<div class = "yl-prd-det-r">60,00€</div>
+			</div>
+		</div></div>
+		<div class = "col-md-4 text-center"><div class = "yl-shop-card" id = "yl-prd-5">
+		<div class = "yl-prod-row-t">
+				<div class = "yl-prd-det-l">SIZE</div>
+				<div class = "yl-prd-det-r"></div>
+			</div>
+			<img src = "assets/products/trekkingshoes.png"></img>
+			<div class = "yl-prod-row-b">
+				<div class = "yl-prd-det-l">TRECKING SHOES</div>
+				<div class = "yl-prd-det-r">80,00€</div>
+			</div></div></div>
+		<div class = "col-md-4 text-center"><div class = "yl-shop-card" id = "yl-prd-6">
+		<div class = "yl-prod-row-t">
+				<div class = "yl-prd-det-l">SIZE</div>
+				<div class = "yl-prd-det-r">
+				<div class = "yl-color-Marker">
+                    <div class="yl-colorEllipse" id = "p2" style = "background-color: rgb(255,255,255);"></div>
+                    <div class="yl-colorEllipse" id = "p1" style = "background-color: rgb(212,167,172);"></div>
+				</div>
+				</div>
+			</div>
+			<img src = "assets/products/tshirt_ladies.png"></img>
+			<div class = "yl-prod-row-b">
+				<div class = "yl-prd-det-l">T-SHIRT</div>
+				<div class = "yl-prd-det-r">20,00€</div>
+			</div></div></div>
+	</div>
+</div></div>
+</section>
+<section id = "yl-about-us">
+	<div class = "container yl-ab-us">
+		<fieldset>
+			<legend>ABOUT&nbsp;US</legend>
+			<p>This is where high-fashion-clothing is designed and crafted from the heart by an amazing team of craftsmen and designers who understand what fashion is.</p>
+		</fieldset>
+	</div>
+</section>
+<section>
+	<div id = "yl-promo">
+		<img src = "assets/social_icons/twitter_bird.png"></img>
+		<p style = "display:inline;margin-left: 3rem;">"SALE: Buy anything for 45% off. Use promo CODE YOLOMY45 when you buy items"</p>
+	</div>
+</section>
+<footer id = "yl-footer">
+<div class = "container">
+<div class = "row">
+	<div class = "col-md-4">
+		<div class = "container yl-bla-bla">
+			<h4>YOLOMY</h4>
+			<p>WE ARE YOLOMY - WE UNDERSTAND FASHION AND STYLE. WE CRAFT OUR PRODUCTS WITH LOVE AND DILIGENCE</p>
+		</div>
+	</div>
+	<div class = "col-md-4 yl-social">
+		<h4>We are Social</h4>
+		<div class = "yl-links container">
+		<a href = "https://plus.google.com"><img src = "assets/social_icons/g_plus.png"></img></a>
+		<a href = "https://www.facebook.com"><img src = "assets/social_icons/facebook.png"></img></a>
+		<a href = "https://www.youtube.com"><img src = "assets/social_icons/you_tube.png"></img></a>
+		<a href = "https://#"><img src = "assets/social_icons/stumble_upon.png"></img></a>
+		<a href = "https://www.skype.com"><img src = "assets/social_icons/skype.png"></img></a>
+		<a href = "https://www.flickr.com"><img src = "assets/social_icons/flickr.png"></img></a>
+		<a href = "https://www.twitter.com"><img src = "assets/social_icons/twitter.png"></img></a>
+		<a href = "https://www.pinterest.com"><img src = "assets/social_icons/pinterest.png"></img></a>
+	</div></div>
+	<div class = "col-md-4">
+		<div class = "container yl-bla-bla-r">
+			<p><a href = "#"> CREDITS</a><span class = "yl-slash">|</span><a href = "#">PRIVARY</a><span class = "yl-slash">|</span><a href = "#">ABOUT</a><span class = "yl-slash">|</span><a href = "#">CONTACT</a></p>
+			<h4>Yolomy: We Mean Fashion</h4>
+		</div>
+	</div>
+</div></div>
+</footer>
+</body>
+</html>

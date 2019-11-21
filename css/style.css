@@ -1,0 +1,438 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+#yl-landing {
+	height: 100%;
+	background-image: url("../assets/backgrounds/hero.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+
+#yl-products{
+	font-family: 'Roboto', sans-serif;
+}
+
+.yl-navbar {
+	font-family: 'Ubuntu', sans-serif!important;
+	font-size: 0.9rem!important;
+	background-color: transparent;
+	padding: 0.4rem 0.5rem 1rem 1remrem;
+	position:relative;
+	z-index: 2;
+}
+.yl-glyph-cart{
+	width: 22px;
+}
+
+.mouse-click{
+	float: center;
+}
+
+.yl-fieldset-mock{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	text-align: center;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.yl-line {
+	height: 2px;
+    width: 88%;
+	
+    margin-left: 2rem;
+    background: rgb(203,203,203);
+	text-align: right;
+}
+
+.yl-cart-text{
+	display: none;
+}
+
+.yl-shop-card {
+	width: 250px;
+	height: 280px;
+	margin-bottom: 2rem;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: rgb(245,245,247);
+}
+
+.yl-text-white{
+	color: #FFFFFF!important;
+}
+
+.yl-text-center {
+	text-align: center;
+}
+
+.yl-white-navspan {
+	background-color: #FFFFFF;
+}
+
+.yl-h-aug a:focus, .yl-h-aug a:hover {
+	text-decoration: none;
+	background-color: transparent!important;
+	color: aqua!important;
+}
+
+.yl-brand {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.0rem;
+}
+
+.yl-brand:hover {
+	color:white;
+	opacity : 0.8;
+}
+
+.yl-ml-px8 {
+	margin-left:8px;
+}
+
+.yl-nav-toggler{
+	outline: none!important;
+	border: none;
+}
+
+.yl-hamb-line{
+	color: #FFFFFF;
+}
+.yl-vt-c {
+	max-height: 80%;
+	width: 100%;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+.yl-no-background {
+	background: transparent!important;
+}
+
+.yl-jumbotron {
+	width: 100%;
+	height:100%;
+	font-family:'Roboto', sans-serif;
+}
+
+.yl-scrolldown-con{
+	position:absolute;
+	left:50%;
+	bottom: 2%;
+	transform:translate(-50%, -50%);
+	text-align: center;
+	animation: db-bounce 2s infinite ease-out;
+}
+
+.yl-float-left{
+	float:left;
+}
+
+#allprod-btn{
+	float:right;
+	background-color: rgb(102,26,0);
+	color: #FFFFFF;
+	border-radius: 4px;
+	font-size: 11px;
+	width: 150px;
+	height: 40px;
+}
+
+.glyphicon-chevron-down{
+	font-size: 25px;	
+}
+
+#yl-checkarea{
+	top: 50%;
+	transform: translate(0%, 50%);
+	display:block;
+}
+
+#yl-checkarea input{
+	margin: 0 3px 0 2rem;
+}
+
+#alprod-toggle{
+	margin: 0 auto;
+}
+.yl-check-column{
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+
+.yl-check-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.yl-prod-row-t {
+	display:flex;
+	flex:50%;
+	font-family:'Open Sans', sans-serif!important;
+}
+
+.yl-prod-row-b {
+	display:flex;
+	flex:50%;
+	bottom: 0%;
+	font-family:'Open Sans', sans-serif!important;
+}
+
+.yl-prd-det-l{
+	flex: 70%;
+	float:left;
+	text-align: left;
+	margin:0.5rem 0rem 0.5rem 1rem;
+}
+
+.yl-prd-det-r{
+	flex: 30%;
+	float:right;
+	text-align: right;
+	margin:0.5rem 1rem 0.5rem 1rem;
+}
+
+.yl-prod-row-b>.yl-prd-det-l{
+	color:rgb(169,155,118);
+}
+
+.yl-shop-card img{
+	display: inline;
+	height: 190px;
+}
+
+.yl-color-Marker {
+    float:right;
+	padding: 7px 0px 0 0;
+    font-size: 17px;
+}
+
+.yl-colorEllipse {
+    float: right;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right:3px;
+}
+
+#yl-prd-1 {
+	border: 4px solid rgb(169,155,118);
+	border-radius: 2px;
+}
+
+#yl-prd-5 img{
+	height: 100px;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+@keyframes db-bounce {
+	0%, 100% {
+		bottom: 1rem;
+	}
+
+	50%{
+		bottom: 0.4rem;
+	}
+}
+
+#yl-about-us{
+	min-height: 50%;
+	padding: 1rem auto;
+	background-image: url("../assets/backgrounds/about.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+	
+}
+
+.yl-ab-us{
+	padding-top: 2.2rem;
+}
+
+fieldset{
+	border: 1.5px solid rgb(144,131,97);
+	padding: 2rem auto;
+	text-align: center;
+	margin-top: 1rem;
+	height: 100%;
+}
+
+fieldset>p{
+	padding: 1rem 1rem 1rem 1rem;
+	width: 50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+fieldset>legend{
+	margin-left: 50%;
+	margin-right: 50%;
+	width:auto;
+}
+
+#yl-promo{
+	padding: 2rem 2rem 2rem 2rem;
+	background-color: rgb(83,81,84);
+	color: #FFFFFF;
+}
+
+#yl-promo p{
+	padding: 
+}
+
+#yl-footer{
+	background-color: rgb(65,65,65);
+	color:#FFFFFF;
+	text-align: center;
+}
+
+.yl-links{
+	margin-top:1.5rem;
+	margin-bottom:1.5rem;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto;
+	grid-column-gap:1rem;
+	grid-row-gap:1rem;
+}
+
+.yl-social {
+	margin-top:1.5rem;
+	margin-bottom:1.5rem;
+}
+
+.yl-bla-bla, .yl-bla-bla-r{
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+}
+
+.yl-slash{
+	color:rgb(169,155,118);
+	margin: 4px 4px 4px 4px;
+	text-decoration:none;
+}
+
+.yl-bla-bla-r>p>a{
+	color: #FFFFFF;
+}
+
+.yl-check-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.yl-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid rgb(144,131,97);
+}
+
+/* On mouse-over, add a grey background color */
+.yl-check-container:hover input ~ .yl-checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.yl-check-container input:checked ~ .yl-checkmark {
+  background-color: #eee;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.yl-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.yl-check-container input:checked ~ .yl-checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.yl-checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-color: rgb(144,131,97);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.yl-down-chev-glyph{
+	margin:0 auto;
+	margin-top: 1px;
+	padding: 0 0 0 0;
+	text-align: right;
+	transform: rotate(270deg);
+	font-weight:bold;
+}
+
+@media screen and (max-width: 768px){
+	nav {
+		background-color: black!important;
+		position:absolute;
+	}
+
+	.yl-li-active {
+		border-left: 2px solid;
+	}
+
+	.yl-navbar{
+		position: fixed;
+		width: 100%;
+	}
+
+	.yl-cart-text{
+		display: inline;
+	}
+	#yl-checksort{
+		flex:100%;
+	}
+	
+	fieldset>p{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 350px){
+	.yl-shop-card {
+		width: 100%;
+	}
+}
