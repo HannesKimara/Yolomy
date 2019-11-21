@@ -5,10 +5,10 @@ This is an portfolio website for Yolomy Store.
     ```
     $ git clone https://github.com/HannesKimara/Yolomy.git
     ```
-- cd into `Delani`:
+- cd into `Yolomy`:
 
     ```
-    $ cd Delani 
+    $ cd Yolomy 
     ```
 ### Usage
 - Open `index.html`
