@@ -34,8 +34,8 @@ html, body {
 
 .yl-fieldset-mock{
 	display: flex;
-    flex-direction: row;
-    align-items: center;
+	flex-direction: row;
+	align-items: center;
 	text-align: center;
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
@@ -43,10 +43,10 @@ html, body {
 
 .yl-line {
 	height: 2px;
-    width: 88%;
+	width: 88%;
 	
-    margin-left: 2rem;
-    background: rgb(203,203,203);
+	margin-left: 2rem;
+	background: rgb(203,203,203);
 	text-align: right;
 }
 
@@ -170,9 +170,9 @@ html, body {
 }
 
 .yl-check-row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .yl-prod-row-t {
@@ -212,17 +212,17 @@ html, body {
 }
 
 .yl-color-Marker {
-    float:right;
+	float:right;
 	padding: 7px 0px 0 0;
-    font-size: 17px;
+	font-size: 17px;
 }
 
 .yl-colorEllipse {
-    float: right;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-right:3px;
+	float: right;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin-right:3px;
 }
 
 #yl-prd-1 {
@@ -328,71 +328,64 @@ fieldset>legend{
 }
 
 .yl-check-container {
-  display: inline-block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	display: inline-block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
-/* Hide the browser's default checkbox */
 input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
 }
 
-/* Create a custom checkbox */
 .yl-checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #eee;
-  border: 1px solid rgb(144,131,97);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+	border: 1px solid rgb(144,131,97);
 }
 
-/* On mouse-over, add a grey background color */
 .yl-check-container:hover input ~ .yl-checkmark {
-  background-color: #ccc;
+	background-color: #ccc;
 }
 
-/* When the checkbox is checked, add a blue background */
 .yl-check-container input:checked ~ .yl-checkmark {
-  background-color: #eee;
+	background-color: #eee;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .yl-checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+	content: "";
+	position: absolute;
+	display: none;
 }
 
-/* Show the checkmark when checked */
 .yl-check-container input:checked ~ .yl-checkmark:after {
-  display: block;
+	display: block;
 }
 
-/* Style the checkmark/indicator */
 .yl-checkmark:after {
-  left: 6px;
-  top: 2px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-color: rgb(144,131,97);
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+	left: 6px;
+	top: 2px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-color: rgb(144,131,97);
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .yl-down-chev-glyph{
