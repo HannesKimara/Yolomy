@@ -12,6 +12,7 @@ This is an portfolio website for Yolomy Store.
     ```
 ### Usage
 - Open `index.html`
+- You could also visit the live demo [here](https://hanneskimara.github.io/Yolomy/)
 
 ### Built with
 - HTML
